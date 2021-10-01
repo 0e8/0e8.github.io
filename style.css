@@ -1,14 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
 :root {
     --links-color: rgb(200, 200, 200);
 }
-
-.animate-bottom {
-    position: relative;
-    -webkit-animation-name: animatebottom;
-    -webkit-animation-duration: 1s;
-    animation-name: animatebottom;
-    animation-duration: 1s
-  }
 
 a:link {
     color: var(--links-color);
@@ -20,9 +14,29 @@ a:visited {
     text-decoration: none;
 }
   
-a:hover {
-    color: var(--links-color);
-    text-decoration: none;
+a{
+  position: relative;
+  display: inline-block;
+  padding: 25px 30px;
+  margin: 40px 0;
+  color: #03e9f4;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  overflow: hidden;
+  margin-right: 50px;
+ 
+}
+
+a:hover{
+  background: #03e9f4;
+  color: #050801;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 200px #03e9f4;
+   -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
 }
   
 a:active {
@@ -32,7 +46,7 @@ a:active {
 
 body {
     background: #282828;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Raleway', sans-serif;
     color: rgb(200, 200, 200);
     font-size: 25px;
     letter-spacing: 2px;
@@ -105,23 +119,23 @@ body {
   }
   
   @-webkit-keyframes stroke-color {
-    0%  { stroke: #3498DB; }
-    24% { stroke: #643232; }
-    25% { stroke: #327864; }
-    49% { stroke: #327864; }
-    50% { stroke: #32326e; }
-    74% { stroke: #32326e; }
-    75% { stroke: #78325a; }
-    99% { stroke: #78325a; }
+    0%  { stroke: #0099ff; }
+    24% { stroke: #0099ff; }
+    25% { stroke: #0099ff; }
+    49% { stroke: #0099ff; }
+    50% { stroke: #0099ff; }
+    74% { stroke: #0099ff; }
+    75% { stroke: #0099ff; }
+    99% { stroke: #0099ff; }
   }
   
   @keyframes stroke-color {
-    0%  { stroke: #3498DB; }
-    24% { stroke: #643232; }
-    25% { stroke: #327864; }
-    49% { stroke: #327864; }
-    50% { stroke: #32326e; }
-    74% { stroke: #32326e; }
-    75% { stroke: #78325a; }
-    99% { stroke: #78325a; }
+    0%  { stroke: #0099ff; }
+    24% { stroke: #0099ff; }
+    25% { stroke: #0099ff; }
+    49% { stroke: #0099ff; }
+    50% { stroke: #0099ff; }
+    74% { stroke: #0099ff; }
+    75% { stroke: #0099ff; }
+    99% { stroke: #0099ff; }
   }
