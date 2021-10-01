@@ -2,6 +2,14 @@
     --links-color: rgb(200, 200, 200);
 }
 
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+
 a:link {
     color: var(--links-color);
     text-decoration: none;
