@@ -1,3 +1,7 @@
+:root {
+    --links-color: rgb( 200, 200, 200);
+}
+
 body {
     font-family: 'Lato', sans-serif;
     color: rgb( 200, 200, 200);
@@ -7,21 +11,21 @@ body {
 }
 
 a:link {
-    color: rgb( 200, 200, 200);
+    color: var(--links-color);
     text-decoration: none;
 }
   
 a:visited {
-    color: rgb( 200, 200, 200);
+    color: var(--links-color);
     text-decoration: none;
 }
   
 a:hover {
-    color: rgb( 200, 200, 200);
+    color: var(--links-color);
     text-decoration: none;
 }
   
 a:active {
-    color: rgb( 200, 200, 200);
+    color: var(--links-color);
     text-decoration: none;
 }
