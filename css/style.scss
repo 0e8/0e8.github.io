@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center bottom;
+
+  .card {
+    background-color: #2c3a47;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 320px;
+    width: 320px;
+    padding: 60px 40px;
+    border-radius: 8px;
+
+    .inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .pic {
+        display: inline-block;
+        margin: 4px;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        padding: 8px;
+        background: linear-gradient(130deg, #74b9ff, #e66767);
+        background-size: 200% 200%;
+        animation: animated-gradient 2s linear infinite;
+
+        img {
+          border-radius: 50%;
+          user-select: none;
+        }
+      }
+
+      .name {
+        text-align: center;
+        user-select: none;
+        color: #fff;
+        margin: 10px;
+        font-size: 28px;
+        font-weight: 500;
+        transition: all 0.3s linear;
+      }
+
+      .description {
+        text-align: center;
+        user-select: none;
+        color: #e66767;
+        font-size: 18px;
+      }
+
+      .icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+
+        * > a {
+          font-size: 22px;
+          margin: 20px 15px;
+          text-decoration: none;
+          color: #f2f2f2;
+
+          &:hover {
+            color: #e66767;
+            transition: 0.3s linear;
+          }
+        }
+      }
+
+      .btn {
+        margin: 15px 0;
+      }
+
+      .btn > a {
+        color: #e66767;
+        text-decoration: none;
+        border: 2px solid #e66767;
+        border-radius: 6px;
+        padding: 12px 50px;
+        transition: 0.3s linear;
+
+        &:hover {
+          background-color: #e66767;
+          color: #2c3a47;
+          transition: 0.3s linear;
+        }
+      }
+    }
+  }
+}
+
+@keyframes animated-gradient {
+  25% {
+    background-position: left bottom;
+  }
+  50% {
+    background-position: right bottom;
+  }
+  75% {
+    background-position: right top;
+  }
+  100% {
+    background-position: left top;
+  }
+}
+
+.hidden {
+  display: none;
+  opacity: 0.001;
+}
+
+.aboutme {
+  height: 130px;
+  width: 320px;
+  color: #fff;
+  position: absolute;
+  margin-top: 275px;
+  text-align: center;
+  line-height: 1.8em;
+}
